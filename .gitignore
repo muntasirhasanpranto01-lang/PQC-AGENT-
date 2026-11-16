@@ -1,0 +1,15 @@
+# Ignore local build output
+/target
+**/target
+Cargo.lock
+
+# Editor files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

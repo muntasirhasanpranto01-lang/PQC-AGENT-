@@ -1,0 +1,13 @@
+# QRYPTARA API
+
+Minimal REST API for the QRYPTARA MVP.
+
+```bash
+cargo run -p qryptara-api
+```
+
+The API exposes:
+
+- `GET /health`
+- `POST /scan`
+- `POST /agent/execute`

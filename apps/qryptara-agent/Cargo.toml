@@ -1,0 +1,10 @@
+[package]
+name = "qryptara-agent"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+tokio.workspace = true
+qryptara-agent-core = { path = "../../crates/agent-core" }
+qryptara-crypto-discovery = { path = "../../crates/crypto-discovery" }
+qryptara-pqc-engine = { path = "../../crates/pqc-engine" }

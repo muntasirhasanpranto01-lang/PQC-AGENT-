@@ -1,0 +1,29 @@
+[workspace]
+members = [
+  "apps/qryptara-api",
+  "apps/qryptara-agent",
+  "crates/agent-core",
+  "crates/crypto-discovery",
+  "crates/pqc-engine",
+  "crates/policy-engine",
+  "crates/audit-engine",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+license = "MIT"
+authors = ["QRYPTARA Contributors"]
+
+[workspace.dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "signal", "time"] }
+axum = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+anyhow = "1"
+thiserror = "2"
+sqlx = { version = "0.8", default-features = false, features = ["runtime-tokio-rustls", "postgres", "uuid", "chrono"] }
+zeroize = { version = "1", features = ["derive"] }

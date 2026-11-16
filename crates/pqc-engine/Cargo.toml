@@ -1,0 +1,9 @@
+[package]
+name = "qryptara-pqc-engine"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+serde.workspace = true
+uuid.workspace = true
+qryptara-crypto-discovery = { path = "../crypto-discovery" }
